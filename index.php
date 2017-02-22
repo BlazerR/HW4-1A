@@ -1,5 +1,27 @@
 <?php
 require_once('database.php');
+$hostname = "sql1/sql2.njit.edu";
+$dbname = "br229";
+$username = "br229";
+$password = "1Rm2Gizav";
+
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+// Create database
+$sql = "CREATE DATABASE myDB";
+if ($conn->query($sql) === TRUE) {
+    echo "Database created successfully";
+} else {
+    echo "Error creating database: " . $conn->error;
+}
+
+$conn->close();
 
 // Get category ID
 if (!isset($category_id)) {
