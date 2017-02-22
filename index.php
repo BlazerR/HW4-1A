@@ -1,6 +1,6 @@
 <?php
 require_once('database.php');
-$hostname = "sql1/sql2.njit.edu";
+$hostname = "sql1.njit.edu";
 $dbname = "br229";
 $username = "br229";
 $password = "1Rm2Gizav";
