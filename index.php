@@ -1,10 +1,5 @@
 <?php
 require_once('database.php');
-$hostname = "sql2.njit.edu";
-$dbname = "br229";
-$username = "br229";
-$password = "1Rm2Gizav";
-
 
 // Get category ID
 if (!isset($category_id)) {
