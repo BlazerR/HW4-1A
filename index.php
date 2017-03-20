@@ -1,5 +1,4 @@
 <?php include 'view/header.php'; ?>
-// TEST1
 <main>
     <h1>Menu</h1>
     <ul>
